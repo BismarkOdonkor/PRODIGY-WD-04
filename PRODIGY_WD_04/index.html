@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="overlay">
+            <div class="home-content">
+                <h1>Welcome to Odonkor's Portfolio</h1>
+                <p>A passionate Web Developer</p>
+                <p>
+                    In this portfolio, you'll find a showcase of my work, including 
+                    my projects and the opportunity to intern at <b>Prodigy Infotech</b>. 
+                    My goal is to get experience with real world problems and to meet high professionals in what i love to do. 
+                    Whether you're here to explore my projects, learn more about my background, or discuss potential 
+                    collaborations, I'm glad you stopped by.
+                </p>
+                <button onclick="scrollToSection('about')">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="content">
+            <img src="images/profile.png" alt="Profile Picture">
+            <p>Hello! I'm Bismark Sackitey Odonkor,  a passionate web developer with a strong background in creating dynamic and user-friendly web applications. With about one and half year experience in web development, I have honed my skills in various web technologies and frameworks, allowing me to deliver high-quality solutions that meet client needs and exceed expectations.</p>
+
+            <p>I am undergoing a <b>Bachelor of Science in Computer Science</b> from <b>Ghana Communication Technology University</b>, where I gained a solid foundation in computer science and software engineering principles. My professional journey has taken me through various roles, from front-end development to full-stack development, working with a diverse range of clients and industries.</p>
+
+            <p>My core skills include HTML, CSS, JavaScript, Angular, and PHP/SQL. I am also proficient in version control systems like Github and have experience with Agile methodologies, which help me efficiently manage projects and collaborate with teams. I am continuously learning and keeping up-to-date with the latest trends and best practices in web development to ensure that I am always delivering the best possible work.</p>
+
+            <p>When I'm not coding, I enjoy playing car games especially GTA V and Asphalt Legend Unite because i love cars, watching new tech and AI movies like Atlas and Creator, and then scrolling through LinkedIn for more inspirations and motivation, which helps me stay creative and balanced. I am always open to new challenges and opportunities, and I am excited to bring my expertise to your next project.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Angular</div>
+            <div class="skill">PHP/SQL</div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-list" id="projectsList">
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bismark Sackitey Odonkor. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
